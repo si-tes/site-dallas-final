@@ -1,0 +1,28 @@
+node_modules
+dist
+.env
+.DS_Store
+
+# Pastas de imagens de logos de times (muito grandes para o GitHub)
+frontend/brasileirão/
+frontend/bundesliga/
+frontend/la liga/
+frontend/ligue 1/
+frontend/outros clubes/
+frontend/premier ligue/
+frontend/seleções/
+frontend/serie A/
+frontend/imagens logo/
+frontend/guidelines/
+frontend/backup_pre_rollback/
+
+# Pastas de imagens de produtos
+produtos/
+brasileirão/
+bundesliga/
+la liga/
+ligue 1/
+outros clubes/
+premier ligue/
+seleções/
+serie A/

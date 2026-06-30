@@ -1,0 +1,52 @@
+import Header from '../components/Header';
+import HeroSection from '../components/HeroSection';
+import ProductCarousel from '../components/ProductCarousel';
+import BrazilSection from '../components/BrazilSection';
+import NationalTeams from '../components/NationalTeams';
+import GiftsSection from '../components/GiftsSection';
+import CatalogSection from '../components/CatalogSection';
+const bestSellers = [
+  { id: 'mock-1', name: 'Brasil Retrô 1970', price: 349.90, image: 'https://images.unsplash.com/photo-1551479460-5e76c686816a?w=800' },
+  { id: 'mock-2', name: 'Arsenal Home 2024', price: 299.90, image: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800' },
+  { id: 'mock-3', name: 'Real Madrid Away', price: 299.90, image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800' },
+  { id: 'mock-4', name: 'Milan Third 2024', price: 289.90, image: 'https://images.unsplash.com/photo-1518605368461-1e1e38ce7163?w=800' },
+  { id: 'mock-5', name: 'Boca Juniors 2000', price: 329.90, image: 'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=800' },
+];
+
+export default function Home() {
+
+  return (
+    <div className="min-h-screen bg-white pb-20">
+      <Header />
+      
+      <main>
+        <HeroSection />
+        
+        <ProductCarousel title="Mais Vendidas" products={bestSellers} />
+        
+        <BrazilSection />
+        
+        <NationalTeams />
+        
+        <GiftsSection />
+        
+        <CatalogSection />
+      </main>
+
+      {/* Footer */}
+      <footer className="mt-16 border-t-2 border-black py-8 px-4 bg-black">
+        <div className="text-center">
+          <h3 className="text-xl font-bold text-white mb-2">
+            Dalla Imports
+          </h3>
+          <p className="text-white/60 text-sm">
+            Camisas de futebol com história e paixão
+          </p>
+          <p className="text-white/40 text-xs mt-4">
+            © 2026 Dalla Imports. Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
